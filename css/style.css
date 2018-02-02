@@ -1,0 +1,108 @@
+nav, section, label, #results button {
+  margin: 0 auto; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font: 1.4rem/1.5 "Helvetica Neue", Helvetica, Verdana, sans-serif;
+  color: #ababab;
+  background: url("../images/concert-photo2.jpg") no-repeat;
+  background-size: 100%;
+  height: 100%;
+  margin: 0; }
+
+nav, section {
+  max-width: 1000px; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem; }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    list-style: none; }
+  nav li:not(:last-of-type) {
+    padding-right: 2rem; }
+    nav li:not(:last-of-type):first-of-type {
+      color: orange; }
+  nav a {
+    text-decoration: none;
+    color: inherit; }
+    nav a:active, nav a:hover {
+      color: orange; }
+
+label {
+  background-color: #3a3a3a;
+  color: #fff;
+  padding: 0.5rem;
+  width: fit-content;
+  width: 100%;
+  grid-area: label; }
+
+#search {
+  width: 100%;
+  padding: 12rem 0 24rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: ". label ." ". form ."; }
+
+form {
+  grid-area: form; }
+
+#searchBox {
+  width: 100%;
+  height: 50px;
+  font-size: 2.4rem;
+  padding: 1rem;
+  outline: none;
+  grid-area: searchBox; }
+  #searchBox:focus {
+    border: 0.2rem solid orange; }
+
+#results {
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "h1 h1 h1" "article article article" "article article article" "article article article" "auto auto auto" "auto auto auto" "auto auto auto" "auto auto auto" "auto auto auto" "auto auto auto" "auto auto auto" ". button ."; }
+  #results h1 {
+    grid-area: h1;
+    padding: 1rem;
+    background-color: dimgray;
+    color: white; }
+  #results h3 {
+    color: orange; }
+  #results h3, #results h5 {
+    margin: 0;
+    padding: 0.5rem;
+    text-align: left; }
+  #results h5 {
+    padding-bottom: 1rem;
+    color: white; }
+  #results article {
+    text-align: center;
+    background-color: dimgray; }
+  #results button {
+    grid-area: button;
+    width: 20rem;
+    height: 4rem;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border: none;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    border-radius: 0.25rem; }
+
+footer {
+  text-align: center;
+  background-color: dimgray;
+  padding: 3rem;
+  color: #fff;
+  margin-top: 5rem; }
