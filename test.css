@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background: #ccc;
+}
+
+nav ul {
+  display: none;
+}
+
+.js-nav-open ul {
+  display: block;
+}
+
+.js-nav-open .closed-state {
+  display: none;
+}
+
+.js-nav-ope, .open-state {
+  display: block;
+}
